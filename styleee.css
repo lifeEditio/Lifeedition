@@ -1,0 +1,16 @@
+
+footer{
+background-color: rgb(133, 128, 128);
+color: white;
+padding: 50px;
+
+text-align: center;
+}
+.images {
+overflow: hidden;
+}
+.images img {
+float: none;
+margin-right: 10px;
+margin-bottom: 20px;
+}

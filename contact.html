@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<?php 
+if($_POST) {
+
+$message = $_POST['champtexte1'];
+$message = $_POST['champtexte2'];
+$message = $_POST['champtexte3'];
+
+
+mail("numbiaravna365@gmail.com","sujet du courrier", $message, "From: emetteur@domain.com") ;
+
+}
+?>
+
+<html lang="en">
+    <style>
+
+h1 {
+color: rgb(216, 19, 5);
+font-size: 24px;
+}
+
+    </style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+<link rel="stylesheet" href="styleee.css">
+
+</head>
+<body>
+    <h1>Formulaire de contact</h1> 
+    <p>Remplissez le formulaire ci-dessous pour nous contacter <br>
+    en nous envoyant un email.</p>
+     
+    
+    <BR>
+    </BR>
+    <form name="monformulaire" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post"></form>
+    <label for="nom">Nom:</label>
+    <input type="text" 
+    id="nom" name="nom"
+    style="width: 360px;"
+required> <br>
+
+<br>
+<label for="email">Addresse email</label>
+<input type="email"
+    name="email" id="email"
+    style="width: 300px;"
+    required> <br>
+    <br>
+
+
+    
+    <Form>
+<label for="Message">Message</label>
+<textarea name="Message"
+style="width: 350px;
+height: 100px;">
+</textarea>
+
+
+
+    </Form>
+    
+ <br>
+<br>
+<BUtton class="envoyer-btn">Envoyer</BUtton>
+
+<style>
+.envoyer-btn {
+background-color: #d24a4a;
+border: none;
+color: white;
+padding: 12px 24px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 4px;
+cursor: pointer;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+}
+.envoyer-btn :hover
+{
+background-color: #3e8e41;
+
+}
+
+.envoyer-btn:active
+{
+    background-color: #4974ca;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); inset;
+
+}
+
+</style>
+
+
+
+    <br>
+    <br>
+    Ou ecrivez nous sur whatsapp
+    au <br>
+
+    +243 999059790<br>
+    <br>
+    <br>
+
+    <footer> 
+        <div>
+
+            <p>copyright &copy; 2023. Life édition. Tous droits réservés.</p>
+                <br>
+                <br>
+
+ </div>
+<br>
+<br>
+<p> Créer par Aravna N-bi </p>
+<div
+    class="images">
+
+    <img src="AAA.png">
+    <img src="FBB.png">
+    <img src="INS.png">
+    <img src="YOU.png">
+    
+    <style>
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        
+                </style>
+    
+    </style>
+    </footer>
+
+
+</body>
+</html>
+
